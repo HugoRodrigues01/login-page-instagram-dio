@@ -1,0 +1,165 @@
+/* INITIAL CONFIGS */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+/* MAIN CONTAINER */
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F3F3F3;
+}
+
+main {
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+    height: 100vh;
+}
+
+/* INSTAGRAM PHONE IMAGE */
+
+main .instagram-image {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+}
+
+main .instagram-image img {
+    height: 50rem;
+}
+
+/* LOGIN */
+
+/* login container */
+main .instagram-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 34rem;
+
+    width: 50%;
+    max-width: 30rem;
+}
+
+.perfil-photo img {
+    border-radius: 50%;
+    width: 6rem;
+    margin: 13% 0;
+}
+
+main .group {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    width: 100%;
+    padding: 1.3rem 0;
+    background-color: white;
+}
+
+/* instagram logo name */
+.instagram-logo {
+    height: 3rem;
+}
+
+.link-blue {
+    color: #0095F6;
+}
+
+.instagram-login-button {
+    background-color: #0095F6;
+    padding: 8px;
+    margin-top: 1.5%;
+    color: white;
+    border-radius: 4px;
+    min-width: 50%;
+    text-align: center;
+}
+
+.instagram-logout-button {
+    margin-top: 2rem;
+}
+
+/* DON´T HAVE ACCOUNT */
+
+.do-not-have-account {
+    color: #828181;
+}
+
+/* Download area */
+
+.download-area {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    padding: 3% 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 0.9rem ;
+}
+
+.button a {
+    padding: 0.8rem 2%;
+}
+
+.button a img {
+    height: 3rem;
+    width: 10rem;
+}
+
+/* SCREEN */
+@media screen and (max-width: 1024px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 658px) {
+    main .instagram-image {
+        display: none;
+    }
+
+    body {
+        background-color: #fff;
+    }
+
+    main .instagram-login {
+        width: 100%;
+    }
+
+    main .group {
+        border: 0;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .button {
+        flex-direction: column;
+    }
+}
